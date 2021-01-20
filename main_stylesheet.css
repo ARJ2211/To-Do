@@ -1,0 +1,132 @@
+/* Body style */
+
+body {
+    background-color: #9dc5c3;
+    background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+}
+
+
+/* Style the close button */
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+/* Style for h1 tag (heading)*/
+
+h1.heading {
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    text-shadow: 3px 2px 6px #000000;
+    display: inline;
+    font-size: 50px;
+}
+
+
+/* Style the list items>*/
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 28px;
+    transition: 0.2s;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+}
+
+
+/* Style for the quotes*/
+
+div.quotes {
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    border-left: 8px dotted whitesmoke;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-size: 20px;
+    box-shadow: 5px 5px 8px rgb(42, 42, 42);
+    text-align: center;
+}
+
+div.quotes:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+div.quotes:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.45em;
+    vertical-align: -0.4em;
+}
+
+
+/* Set all odd list items to a different color (zebra-stripes) */
+
+ul li:nth-child(odd) {
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+
+/* Hover details*/
+
+ul li:hover {
+    background-color: #6b0f1a;
+    background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+}
+
+
+/* When clicked on, add a background color and strike out text */
+
+ul li.checked {
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+/*When clicked on and hover*/
+
+ul li.checked:hover {
+    background-color: #89e686;
+    background-image: linear-gradient(315deg, #89e686 0%, #026b25 74%);
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+/* Add a "checked" mark when clicked on */
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(112, 85, 85);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
